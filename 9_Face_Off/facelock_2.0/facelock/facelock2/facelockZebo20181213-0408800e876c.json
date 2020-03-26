@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "facelockzebo20181213",
+  "private_key_id": "0408800e876c443f3363afd6ab7582833989764b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCYLwwF4GfBUoHk\nQffL1hYGH0xP1Y3qrZWfWvcEn6l9r1mpVmJs/C4U8etdW6Be8a+WSiO/2FuD7WYT\nOnmE4B2PndckDmVfUGynoKczqXLRLQPMh1t58Pf773smPPccoWugo94J3Y24mwms\nDQ8scxpWI/z5j0/2e7VpzUvAFKg5UmbyTIUbg4n6Mrzdeq/ESIgRC0sBkKyUMEHc\nh4WpqAQ8lj3cFgYJMaPLTKCikVoosXGIYb1IXn6LNiv/tN13NFWe2yXq0iJp6QHc\nl9nkUycHHO7Cw8pBDh3Z3l7r4TJY9slu8Ds8FSW3s5ITurmCB1faRpmCHD5HHwlo\nlsIuZaJvAgMBAAECggEABXw7CIJkWv4YiA8UpmueBmeqyxaqDQzN350nJpFQSgmm\nLeNbAto7TJTEfgX0C6TWEyp/vvkTO15Ol2AJMNyyVBKrxk66h3f3oqC4xhtUDYdI\n1sUEnncs1dwPUHtSd0OEnjKp3MMrY4o7DARTr3xENVlwudhyvzI9Gx/Dz88uzROs\nABF8VB93Fkj7O/RdkJ5ZOo5B4KfyXN314naIF0zDsjIaG/oj+NsMLFI2sOXomfgB\nbooxdteOPdaz+1DRO3dZluxA5KvqnElCYPY5PJIECOE1MXq/yxU6EqOyDm1a88SV\nxay+yTjCTZCQSNnxQyY5AYLw1mzE5bC+IR8d2s9xCQKBgQDWDnW/qdbyoiokWi7v\nK3F+XDC/8BgXX5mCSwvfb8gOK0Z6RvLa8bvEcc3/B9joeIFaZW+tZjQbKkWFMtq1\nxL+NgEocOQhy03LD3zKY25QrAk93WS7AH1vsWSF1lKou/zQExrAFVqKihl3XRnt7\nXcOrTGoZh4jF5NkhK7PAHRdPrQKBgQC2AOrHAPHXPw6QpuLEzbxUXVJmmV5rXyqT\nOCNZ/iIicKipiuxWOYfso7tiWHBzm+C9PFh5gCDzXUh0H2lHYGA/7eb0ZXhafheJ\nzkC17TEZ62Uud7LbKLdr+Vxy2nnF/3L36VPGtWaDSaWNZEB3RCkKaaubd1AzTNUc\nHsEAxmjOCwKBgQCsdU/20F5Gc9KiISqJNSYmWR5JtaWjRzmFmPMC3KuAhussXvcQ\n4QuXtNzzqR3gBh6pduon+Rzn+gGy1AsTwWVXGtIatPSSlrtzBeNc9iQFFsJxdJ/O\n2DUWUaU8dz85yBDf/DgaxPcZHEqEw9t+xEd+Pn2I/gJ69erd57jVglqirQKBgDV+\n2YM6vNrWlvJfiyHrkuJ9N54ekEkhBMOW6ZUnBGN5F6oVwlepu1EL4yUJ96uTcqBM\nn3i+93Bwx74SCYDITCIeTBcjyBdZHpQLwqt2l0sWDHx3BGQ0eI1NEyZTHx3acrF5\nrH0ojoQiXn3LrMMhjqqX2q/shu89Mxp706DlsKJ3AoGBAKfSHIYcdJqC6A0tch+p\nxMLqurix0dFeD1Lv0dKE+37s9LJrUZpKLxsM+EtWO7HN/Ix6QsDu4kCzscXD9VmG\nZLZZ1ug3VSyb0azsZ5mRk94e7za3wRMC7vlE8jVf0ETmnsgB+cm1W2lSiPbrsi1t\n2C7u36PFNxFPyIk2RmtxvFeY\n-----END PRIVATE KEY-----\n",
+  "client_email": "facelock-zebo@facelockzebo20181213.iam.gserviceaccount.com",
+  "client_id": "112871111136519974150",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/facelock-zebo%40facelockzebo20181213.iam.gserviceaccount.com"
+}

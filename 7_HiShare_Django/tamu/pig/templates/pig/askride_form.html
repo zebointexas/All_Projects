@@ -1,0 +1,160 @@
+{% extends 'pig/base.html' %}
+{% block title %} Add a New Album {% endblock %}
+{% block albums_active %}active{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-7">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <form class="form-horizontal" action="" method="post" enctype="mutipart/form-data">
+
+                        {% csrf_token %}
+
+                        <div class="form-group">
+
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <span class="text-danger small"></span>
+                            </div>
+
+                            <label class="control-label col-sm-2"><label for="id_Depart_Date">Depart Date:</label></label>
+
+                            <div class="col-sm-10">
+                                <input type="date" id="meeting-time" name="Depart_Date" value="2019-03-01" min="2019-02-01"  required id="id_Depart_Date">
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <span class="text-danger small"></span>
+                            </div>
+
+                            <label class="control-label col-sm-2"><label for="id_From">From:</label></label>
+                            <div class="col-sm-10">
+                                        <input type="text" name="From" placeholder="950 Colgate Dr, College Station, TX 77840" maxlength="200" required id="id_From" minlength="10" />
+
+                                    <select type="text" name="From_City"  placeholder="College Station" maxlength="200" required id="id_From_City" minlength="10" />
+                                          <option value="College Station">College Station</option>
+                                          <option value="Houston">Houston</option>
+                                          <option value="Dallas">Dallas</option>
+                                          <option value="Austin">Austin</option>
+                                          <option value="Others">Others</option>
+                                    </select>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <span class="text-danger small"></span>
+                            </div>
+
+                            <label class="control-label col-sm-2"><label for="id_To">To:</label></label>
+
+                            <div class="col-sm-10">
+                                    <input type="text" name="To"  placeholder="3524 Greystone Dr, Austin, TX 78731" maxlength="200" minlength="10" required id="id_To"  />
+                                     <select type="text" name="To_City" placeholder="Houston" maxlength="200" required id="id_From_City" minlength="10" />
+
+                                          <option value="Houston">Houston</option>
+                                          <option value="College Station">College Station</option>
+                                          <option value="Dallas">Dallas</option>
+                                          <option value="Austin">Austin</option>
+                                          <option value="Others">Others</option>
+                                    </select>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <span class="text-danger small"></span>
+                            </div>
+
+                            <label class="control-label col-sm-2"><label for="id_Seats_Needed">Seats Needed:</label></label>
+
+                            <div class="col-sm-10">
+                                 <input type="number" name="Seats_Needed" value="3" max="7" min="1" required id="id_Seats_Needed" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <span class="text-danger small"></span>
+                            </div>
+
+                            <label class="control-label col-sm-2"><label for="id_Mobile">Mobile:</label></label>
+
+                             <div class="col-sm-10"><input type="number" name="Mobile" value="1737888888" required id="id_Mobile" max="9999999999" min="1000000000" /></div>
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <span class="text-danger small"></span>
+                            </div>
+
+                            <label class="control-label col-sm-2"><label for="id_WeChat">WeChat:</label></label>
+
+                            <div class="col-sm-10"><input type="text" name="WeChat" maxlength="50" minlength="3" required id="id_WeChat" /></div>
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <span class="text-danger small"></span>
+                            </div>
+
+                            <label class="control-label col-sm-2"><label for="id_Student_Or_Not">Student? </label></label>
+
+                            <div class="col-sm-10"><input type="checkbox" name="Student_Or_Not" id="id_Student_Or_Not" /></div>
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <span class="text-danger small"></span>
+                            </div>
+
+                            <label class="control-label col-sm-2"><label for="id_Gas_Return">Gas Return:</label></label>
+
+                            <div class="col-sm-10"><input type="number" name="Gas_Return" placeholder="3" max="30" min="1" required id="id_Gas_Return" />Gallons</div>
+                        </div>
+
+
+
+
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="bnt btn-success">Submitt</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

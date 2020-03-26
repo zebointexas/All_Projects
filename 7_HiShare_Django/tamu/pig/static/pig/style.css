@@ -1,0 +1,29 @@
+body{
+    background: green url("images/background_1.jpg");
+}
+
+.navbar{
+    border-radius:0;
+}
+
+.navbar-brand{
+    font-family: 'Satisfy', cursive;
+}
+
+#homepage_h1 {
+    align="center";
+    color="blue";
+    style="font-size:60px;";
+}
+
+.pull_result_table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-left: 39px;
+}
+
+.panel-body {
+    background-color: #c2d2ea;
+}
+
+

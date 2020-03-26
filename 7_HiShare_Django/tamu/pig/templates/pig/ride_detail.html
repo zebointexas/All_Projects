@@ -1,0 +1,59 @@
+{% extends 'pig/base.html' %}
+
+{% block title %}
+      Ride Details
+{% endblock %}
+
+{% block body %}
+    <!--    <img src="{{ album.album_logo.url }}" >   -->
+
+
+<div><b><a href="pig/ride">Leave this page</a></b></div>
+<br>
+<br>
+
+<div><b>Your Post Details<b></div>
+<br>
+
+
+
+<table>
+    <tr>
+         <td> Departure Time: </td>
+         <td> {{ ride.Depart_Date | date:"d-m-Y"}}</td>
+    </tr>
+    <tr>
+         <td> From: </td>
+         <td> {{ ride.From }} - {{ ride.From_City }} </td>
+    </tr>
+        <tr>
+         <td> To:</td>
+         <td> {{ ride.To }} - {{ ride.To_City }}</td>
+    </tr>
+    <tr>
+         <td> Seats Offer:</td>
+         <td> {{ ride.Total_Seats_Available }} </td>
+    </tr>
+        <tr>
+         <td> WeChat:</td>
+         <td> {{ ride.WeChat }} </td>
+    </tr>
+        <tr>
+         <td> Mobile:</td>
+         <td> {{ ride.Mobile }} </td>
+    </tr>
+    <tr>
+         <td> Gas Needed:</td>
+         <td> {{ ride.Gas_Need }}</td>
+    </tr>
+    <tr>
+         <td> Student? :</td>
+         <td> {{ ride.Student_Or_Not }}</td>
+    </tr>
+</table>
+
+    {% if error_message %}
+        <p><strong>{{ error_message }}</strong></p>
+    {% endif %}
+
+{% endblock %}

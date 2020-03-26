@@ -1,0 +1,32 @@
+﻿Instruction to setup the application in windows 10
+
+o	step 1: download and setup python2 and python3
+
+o	step 2. download & install pip
+
+o	step 3: Install Django using the following command:
+		pip install Django==1.10.8
+
+o	step 4: Install face recognition library (details instruction in this link--> https://github.com/ageitgey/face_recognition)
+		at first install dlib
+		then install cmake using command: pip install cmake
+		then install face recognition using this command: pip install face_recognition
+
+o	step 5: Install openCv using this command: 
+	pip install opencv-python
+
+o	step 6: Run the following commands to configure google vision api:
+		pip install --upgrade google-api-python-client
+		pip install --upgrade google-cloud-vision
+
+o	step 7: install scipy using this command:
+		pip install scipy
+
+o	step 8: Add the env variables in Windows (control panel, system, environment variables)
+		name: GOOGLE_APPLICATION_CREDENTIALS
+		value: path to facelock-aee2366fc392.json file
+
+o	step 9: Go to facelock2\facelockproj folder and run the following command to run the application:
+		python manage.py runserver
+
+

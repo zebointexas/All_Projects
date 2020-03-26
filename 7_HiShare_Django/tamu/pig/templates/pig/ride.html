@@ -1,0 +1,84 @@
+{% extends 'pig/base.html' %}
+
+{% block body %}
+
+	     <ul>
+                    <a href="{% url 'pig:ride-add' %}">
+                        <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> &nbsp; Add a Ride
+                    </a>
+	     </ul>
+
+
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+
+
+function convertDate(d) {
+  var p = d.split("/");
+  return +(p[2]+p[1]+p[0]);
+}
+
+function sortByDate() {
+  var tbody = document.querySelector("#results tbody");
+  // get trs as array for ease of use
+  var rows = [].slice.call(tbody.querySelectorAll("tr"));
+
+  rows.sort(function(a,b) {
+    return convertDate(a.cells[0].innerHTML) - convertDate(b.cells[0].innerHTML);
+  });
+
+  rows.forEach(function(v) {
+    tbody.appendChild(v); // note that .appendChild() *moves* elements
+  });
+}
+
+document.querySelector("button").addEventListener("click", sortByDate);
+
+
+</script>
+
+        <table class="pull_result_table"   style="table-layout:fixed;word-break:break-all">
+            <tr>
+                <th class="pull_result_table_record" class="ride_time" style="width:120px">Date<br>(mm-dd-yyyy)</th>
+                <th class="pull_result_table_record" style="width:285px">From</th>
+                <th class="pull_result_table_record" style="width:285px">To</th>
+                <th class="pull_result_table_record" style="width:120px">Seats <br> Available</th>
+                <th class="pull_result_table_record" style="width:150px">WeChat</th>
+                <th class="pull_result_table_record" style="width:100px">Mobile</th>
+                <th class="pull_result_table_record" style="width:70px"> Gas <br> Supply </th>
+                <th class="pull_result_table_record" style="width:80px" bgcolor="#FF0000">Student?</th>
+            </tr>
+
+            {% if all_rides %}
+               {% for haveRide in all_rides %}
+                    <tr>
+
+                            <th>{{ haveRide.Depart_Date | date:"m-d-Y"}}</th>
+                            <th>{{ haveRide.From }}</th>
+                            <th>{{ haveRide.To }}</th>
+                            <th>{{ haveRide.Seats_Needed }} </th>
+                            <th><a href=""}>{{ haveRide.WeChat }}</a></th>
+                            <th><a href="tel:"{{ haveRide.Mobile }} >{{ haveRide.Mobile }}</a> </th>
+
+
+                            <th>{{ haveRide.Gas_Return }}</th>
+
+                        {#      {%  if Student_Or_Not == "False"%}   #}
+                               <th bgcolor="">{{ haveRide.Student_Or_Not }}</th>
+                        {#      {%  endif  %}                        #}
+                    </tr>
+              {% endfor %}
+            {% endif %}
+
+        </table>
+
+
+{% endblock %}
+

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sharp-messenger-227600",
+  "private_key_id": "a8a5b0da28abb131184951dcb1aaf073d306e2ea",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC10zhCjkmx8SzY\ndLnRbBPahMBL3ME2CDbdJ7G599y5TTy8INacMwbMJ6yjm8M1TrHSbxpvuQEQJkxV\nGSYnM0JQDf8A1AHgXbtBO2eXTTuklDv1XfI4YruzLPEezBWkSEjZfPm0CfvEYet3\n8eCg1f9cckPvlniYd6nvgi7YP0EjI3ZIBG70ZqFSjb3ftYGvXtfKbiySteY1r4Vv\nIqHHo2kRbpCYZzUr5BYKcGokw5vqCYvLKZKQycm4KXwfyI80oyYjxx60gndx9dix\nYbPXRR6VeRxRhK9lfR6UWyIzgazNn4+tx/HZhRIvAsT7ZN52EaUXQNbS64hEkKQ1\nxzjGp1c7AgMBAAECggEACrlyHI7a7ulsPTopSZ5nz2A8HV1gcgjq/4FbXL4vYSia\nl/gR4HWsBXejmaTSzz6cg251LzjIxMSVhQFuPCqsUx94NnrKv4qXxGG2Gvj9txfd\nL3xCkKvWKVvRvwDHmACBd36FFebu2Cb0Zgc4uhPVM4Uz15pW85s/RTa2/58/fsx7\nmiY9ul8gz9M8jyXPWDmHQKjoFizviktafDoHHQW4M9Zb4wy7Ch3Pqt25HnI3//a7\nPzMu6rrAjzjdROnKVP1lGL9Bh6Ocgis9HoWuXmfF60RP/7F3cqUVSIfY60uV69V3\nG9WD6XCaZ4A98d/X2LIxZ2t92fSVVBZF9WEeNtW6UQKBgQDs33T8A0E1CooewIye\nZ2syeBCfWzge3CI0lcMFngvMmRC0n/U70juR6l/eCmxUMc+kv3fA/lEcEiPIgXgH\nAO0ASjDR+2AiuKKZneL9qawGwYYP+uWU+IY+auGnk/FEkNqM6hbD6HHaPsqKir8v\nk6Jgd85CjlgDYQLLIHGX1XM7qwKBgQDEgdYWjErLwB0G+R78xq9vANRhIyh/UBav\nWX0O9qRHXWiBxokUz7eyRg2RbEY69XiBjrqm9f/LjTmwuBsjDhRiCnBuxU9857Nj\nhErldVhvJTpB8tpd78KpFjoaa1gIpOs6PiMsOQeSqYu+dKKF0j1TjK3eDFIiZfK1\nYH82hMtCsQKBgDxGvLkoht5deTpMGzxv6rpkDS7QAp7vu5CQD5mNV0lQJg0gq0H2\nxIvkDVMuadSe/EzbIDkvPiqbfxmVwJpfpO+u8W9tvU/4lf/rSojsNUde1aOZX/Sh\nrV+SyStgnUOqbMLxCqv9qYM0+Ut59R7BPc+4jPcoy8LIW/KepelSOsmTAoGAGCAQ\nlqgWrrkhVy/SnBoQg8JIULyuRiMhBdoovmONe61+HSCwx7tQxDRRih8O6EImz1Ek\nnUbqZqUqBgY0XrNl0TuS3iafQah4n6koQM+NUefyJRKZuJqs/XFbJM80+aq1rmre\nipld0qW6IGHVajSLjuxglDhTBSIbECWOuLTI96ECgYAsBEiyMSf4Ud35jDALAKlT\n+MwCp2l5iTaptg98lAnu8X8qrf5Cg5SxWUCIEkNkJzP7UmkFNRAxmtg4V10gorfO\now4CtZZX9k7TRg0qmC5Wf36Q3oR0Z+8AsNaL8yPoSxAKrj8sczsdi8Wq8VU2aFQl\nI2OUFTqaRmhHFaA6VD5Yxg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "face-off@sharp-messenger-227600.iam.gserviceaccount.com",
+  "client_id": "103574855995909530256",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/face-off%40sharp-messenger-227600.iam.gserviceaccount.com"
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %} Hi, Share {% endblock %}
+    </title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel='stylesheet'  href='https://fonts.googleapis.com/css?family=Satisfy' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'pig/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'pig/bootstrap.icon-large.min.css' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<style>
+    .pull_result_table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      margin-left: 39px;
+      margin-right: 39px;
+    }
+
+    .pull_result_table, td, th {
+        padding: 6px;
+    }
+
+    tr:nth-child(even) {
+      background-color:rgba(0,152,50,0.5);
+
+    }
+
+    tr:nth-child(odd) {
+      background-color:rgba(0,160,70,0.5);
+    }
+</style>
+
+
+
+<style type="text/css">
+table{
+    table-layout: fixed;
+}
+
+td{
+    word-wrap:break-word
+}
+</style>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+        <!--Header-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" href="{% url 'pig:index' %}">Hi, Share</a>
+        </div>
+
+        <!-- Items -->
+        <div class="collapse navbar-collapse" id="topNavBar">
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a href="{% url 'pig:ride' %}">
+                        <span class="glyphicon glyphicon-road" aria-hidden="true"></span> Ride Now
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="{% url 'pig:ask-ride' %}">
+                        <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Ride Request
+                    </a>
+                </li>
+             <!--    <li class="active">
+                    <a href="{% url 'pig:index' %}">
+                        <span class="glyphicon glyphicon-music" aria-hidden="true"></span> &nbsp;Song
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="{% url 'pig:index' %}">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> &nbsp;Star
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="{% url 'pig:index' %}">
+                        <span class="glyphicon glyphicon-plane" aria-hidden="true"></span> &nbsp;Fly
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="{% url 'pig:index' %}">
+                        <span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span> &nbsp;Bitcoin
+                    </a>
+                </li>
+                -->
+
+            </ul>
+
+<!--
+            <form class="navbar-form navbar-left" role="search" method="get" action="#">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="q" value="">
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                 <li class="">
+                    <a href="{% url 'pig:album-add' %}">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> &nbsp; Add Album
+                    </a>
+                </li>
+                 <li class="">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span> &nbsp;Logout
+                    </a>
+                </li>
+            </ul>
+-->
+
+
+
+
+        </div>
+
+    </div>
+</nav>
+{% block body %}
+{% endblock %}
+</body>
+</html>

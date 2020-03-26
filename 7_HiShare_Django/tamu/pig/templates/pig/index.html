@@ -1,0 +1,49 @@
+{% extends 'pig/base.html' %}
+
+{% block body %}
+
+<style>
+#homepage_h1 {
+    text-align: center;
+    color: black;
+    font-family: "Calibri";
+
+}
+#homepage_h3 {
+    text-align: center;
+    color: black;
+    font-family: "Calibri";
+}
+
+</style>
+
+
+
+<h1 id="homepage_h1"> Welcome to Hi, Share</h1>
+<h3 id="homepage_h3"> The Best Life Solution for Chinese Student in Texas</h3>
+
+        <ul>
+            {% for album in all_albums %}
+
+                <!-- Album logo -->
+                <a href=" 'pig:detail' album.id %}">
+                    <img src="{{ album.album_logo.url }}" class="img-responsive">
+                </a >
+
+                <li><a href="{% url 'pig:detail' album.id %}">{{album.album_title}}</a ></li>
+
+                <!-- Delete Album -->
+                <form action="{% url 'pig:album-delete' album.id %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <input type="hidden" name="album_id" value="{{ album.id }}" />
+                    <button type="submit" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </form>
+
+
+
+            {% endfor %}
+        </ul>
+
+{% endblock %}

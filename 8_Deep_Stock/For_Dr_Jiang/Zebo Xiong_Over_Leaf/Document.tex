@@ -1,0 +1,127 @@
+\documentclass[a4paper,10pt,twoside]{report}
+
+\usepackage{Packages}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{Listings}
+
+\addto\captionsbritish{\renewcommand{\contentsname}{Table of Contents}}
+
+%\linenumbers
+
+\newcommand{\researchgroup}{Financial Computing 3}
+
+\newcommand{\shortdoctitle}{Doc title}
+\newcommand{\doctitle}{A Study of Deep Learning in Micro-Economic Analysis and Computational Finance}
+\newcommand{\docsubtitle}{}
+
+\newcommand{\authorone}{Zebo, Xiong}
+\newcommand{\sauthorone}{Ph.D Student}
+\newcommand{\authortwo}{XXX, XXX}
+\newcommand{\sauthortwo}{Ph.D Student}
+\newcommand{\keywords}{Finance, Deep Learning, Computation}
+\newcommand{\version}{First version}
+\newcommand{\monthYear}{December 2019}
+
+\newcommand{\firstCommitteeMember}{Dr. Anxiao, Jiang}
+\newcommand{\secondCommitteeMember}{}
+\newcommand{\thirdCommitteeMember}{}
+
+\author{\me}
+
+\hypersetup
+{
+    pdfauthor   = {\authorone and \authortwo},
+    pdftitle    = {\shortdoctitle},
+    pdfsubject  = {\doctitle},
+    pdfkeywords = {\keywords}
+}
+
+\begin{document}
+
+\include{Titlepage}
+
+\normalsize
+
+\chapter*{Abstract}\label{chapter:Abstract}
+\setcounter{page}{0}
+\pagenumbering{roman}
+\addcontentsline{toc}{chapter}{Abstract}
+\input{Chapters/Chapter0.tex}
+
+\tableofcontents
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Collections}\label{chapter:Introduction}
+\input{Chapters/Chapter1.tex}
+\section{From Student}
+\input{Chapters/Chapter_1_Section/Section_2.tex}
+\section{From Professor}
+\input{Chapters/Chapter_1_Section/Section_1.tex}
+
+ 
+\chapter{Research Progress}\label{chapter:Research Progress}
+\input{Chapters/Chapter2.tex}
+
+\section{Week 1 (Dec 22 - Dec 27)}
+\input{Chapters/Chapter_2_Section/Section_1.tex}
+
+\section{Week 2 (Dec 28 - Jan 4)}
+\input{Chapters/Chapter_2_Section/Section_2.tex}
+
+\section{Week 3 (Jan 5 - Jan 11)}
+\section{Week 4 (Jan 12 - Jan 18)}
+ 
+
+\chapter{Terminology}\label{chapter:Terminology}
+\input{Chapters/Chapter3.tex}
+\section{Economics and Finance}
+\section{Neural Network}
+
+\chapter{Milestones}\label{chapter:Milestones}
+\input{Chapters/Chapter4.tex}
+\section{Before 2019/12}
+\input{Chapters/Chapter_4_Section/Section_Before_2019_Dec.tex}
+\section{After 2019/12} 
+\input{Chapters/Chapter_4_Section/Section_After_2019_Dec.tex}
+
+\chapter{Previous \& Parallel Works}\label{chapter:Parallel Works}
+\input{Chapters/Chapter5.tex}
+
+\section{Video Steam Vehicle Data Extraction (Parallel)}
+\input{Chapters/Chapter_5_Section/Section_Vehicle.tex}
+
+\section{LSTM for Time Series Prediction (Previous)}
+\input{Chapters/Chapter_5_Section/Section_LSTM_Financial_Time_Series.tex}
+
+\section{On-Off Campus Ride Sharing Platform (Parallel)}
+\input{Chapters/Chapter_5_Section/Section_Ride.tex}
+
+\section{Facial Recognition \& Django Development (Previous)}
+\input{Chapters/Chapter_5_Section/Section_Facial.tex}
+
+\section{Software Engineering - Program Invariants Detection (Previous)} 
+\input{Chapters/Chapter_5_Section/Section_Invariants.tex}
+
+\section{2019 Fall Class Summary (Previous)} 
+\input{Chapters/Chapter_5_Section/Section_2019_Fall_Class_Summary.tex}
+
+
+\bibliographystyle{unsrt}
+\bibliography{References}
+\newpage
+
+\appendix
+\addcontentsline{toc}{chapter}{Appendix}
+\chapter{My First Appendix}\label{chapter:Appendix A}
+\input{Appendices/Appendix_A.tex}
+
+\end{document}

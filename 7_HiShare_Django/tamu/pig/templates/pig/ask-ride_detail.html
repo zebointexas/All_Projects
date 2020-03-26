@@ -1,0 +1,61 @@
+{% extends 'pig/base.html' %}
+
+{% block title %}
+      Request Details
+{% endblock %}
+
+{% block body %}
+
+<div><b><a href="pig/ride">Leave this page</a></b></div>
+<br>
+<br>
+
+<div><b>Your Post Details<b></div>
+<br>
+
+<table>
+    <tr>
+         <td> Departure Time: </td>
+         <td> {{ askride.Depart_Date | date:"d-m-Y"}}</td>
+    </tr>
+    <tr>
+         <td> From: </td>
+         <td> {{ askride.From }}</td>
+    </tr>
+        <tr>
+         <td> To:</td>
+         <td> {{ askride.To }}</td>
+    </tr>
+    <tr>
+         <td> Seats Needed:</td>
+         <td> {{ askride.Seats_Needed }} </td>
+    </tr>
+        <tr>
+         <td> WeChat:</td>
+         <td> {{ askride.WeChat }} </td>
+    </tr>
+        <tr>
+         <td> Mobile:</td>
+         <td> {{ askride.Mobile }} </td>
+    </tr>
+    <tr>
+         <td> Gas Offer:</td>
+         <td> {{ askride.Gas_Return }}</td>
+    </tr>
+    <tr>
+         <td> Student:</td>
+         <td> {{ askride.Student_Or_Not }}</td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+    {% if error_message %}
+        <p><strong>{{ error_message }}</strong></p>
+    {% endif %}
+
+{% endblock %}

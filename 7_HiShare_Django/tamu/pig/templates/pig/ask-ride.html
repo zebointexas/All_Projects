@@ -1,0 +1,44 @@
+{% extends 'pig/base.html' %}
+{% block body %}
+
+<ul>
+
+        <a href="{% url 'pig:ask-ride-add' %}">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> &nbsp; Request a Ride
+        </a>
+
+</ul>
+
+<table class="pull_result_table">
+    <tr>
+        <th class="pull_result_table_record" style="width:120px">Date<br>(mm-dd-yyyy)</th>
+        <th class="pull_result_table_record" style="width:285px">From</th>
+        <th class="pull_result_table_record" style="width:285px">To</th>
+        <th class="pull_result_table_record" style="width:120px">Seats <br> Needed</th>
+        <th class="pull_result_table_record" style="width:150px">WeChat</th>
+        <th class="pull_result_table_record" style="width:100px">Mobile</th>
+        <th class="pull_result_table_record" style="width:70px">Gas <br> Offer</th>
+        <th class="pull_result_table_record" style="width:80px" bgcolor="#FF0000">Student?</th>
+    </tr>
+
+
+    {% if all_requests %}
+       {% for askRide in all_requests %}
+            <tr>
+                <th>{{ askRide.Depart_Date | date:"m-d-Y"}}</th>
+                <th>{{ askRide.From }}</th>
+                <th>{{ askRide.To }}</th>
+                <th>{{ askRide.Seats_Needed }} </th>
+                <th>{{ askRide.WeChat }}</th>
+                <th>{{ askRide.Mobile }}</th>
+                <th>{{ askRide.Gas_Return }}</th>
+                <th>{{ askRide.Student_Or_Not }}</th>
+            </tr>
+      {% endfor %}
+    {% endif %}
+
+</table>
+
+
+{% endblock %}
+
