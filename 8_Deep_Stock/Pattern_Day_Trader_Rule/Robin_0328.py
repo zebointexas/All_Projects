@@ -168,7 +168,7 @@ while True:
             print('his2 price:      ' + str(his2))
 
     if (in_time_range('1430-1500')):
-            robin_stocks.login('zeboxiong.texas@gmail.com', 'XKSJSG@Kuhgd98173~&%$#')
+            robin_stocks.login('---', '---')
             my_stocks = robin_stocks.build_holdings()
             robin_stocks.order_sell_market('SAVE', V)
             print('Selling')
