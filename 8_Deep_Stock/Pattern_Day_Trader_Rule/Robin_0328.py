@@ -54,7 +54,7 @@ while True:
     time.sleep(10)
     print('Now -->  ' + str(datetime.datetime.now()))
     if(in_time_range('0900-1430')):
-            robin_stocks.login('zeboxiong.texas@gmail.com', 'XKSJSG@Kuhgd98173~&%$#')
+            robin_stocks.login('------', '-------')
             my_stocks = robin_stocks.build_holdings()
 
             cur = robin_stocks.stocks.get_latest_price('SAVE', True)
